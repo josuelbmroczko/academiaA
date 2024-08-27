@@ -6,7 +6,6 @@ export default function Topo() {
     const videoRef = useRef(null);
 
     useEffect(() => {
-        // Verifica se o vídeo está carregado e pronto para ser reproduzido
         if (videoRef.current) {
             videoRef.current.load();
             videoRef.current.play()
@@ -19,6 +18,17 @@ export default function Topo() {
         }
     }, []);
 
+    const scrollToElement = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const top = element.getBoundingClientRect().top + window.pageYOffset - 150;
+            window.scrollTo({
+                top: top,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <StyleTopo id='home'>
             <video ref={videoRef} autoPlay loop muted>
@@ -28,10 +38,10 @@ export default function Topo() {
 
             <div className='opcoes'>
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#contatos">CONTATO</a></li> {/* Utilizando href para rolar suavemente até contatos */}
-                    <li><a href="#unidades">UNIDADES</a></li>
-                    <li><a href="#taekwondo">TAEKWONDO</a></li>
+                    <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToElement('home'); }}>HOME</a></li>
+                    <li><a href="#contatos" onClick={(e) => { e.preventDefault(); scrollToElement('contatos'); }}>CONTATO</a></li>
+                    <li><a href="#unidades" onClick={(e) => { e.preventDefault(); scrollToElement('unidades'); }}>UNIDADES</a></li>
+                    <li><a href="#taekwondo" onClick={(e) => { e.preventDefault(); scrollToElement('taekwondo'); }}>TAEKWONDO</a></li>
                 </ul>
             </div>
 
