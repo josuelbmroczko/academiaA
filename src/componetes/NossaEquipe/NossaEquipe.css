@@ -1,0 +1,203 @@
+.nossa-equipe {
+    width: 100%;
+    color: white;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #121212, #0f0f0f);  /* Fundo mais escuro */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modalIco {
+    display: flex; /* Para garantir que o container use flexbox */
+    justify-content: center; /* Alinha os ícones no centro */
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 20px; /* Distância superior */
+  }
+  
+  .modalIco a {
+    width: auto; /* A largura dos links deve ser automática para que os ícones não ocupem toda a largura */
+    display: flex; /* Flexbox para alinhar o conteúdo dentro do link (o ícone) */
+    justify-content: center; /* Garante que o ícone fique centralizado dentro do link */
+    align-items: center; /* Centraliza o ícone verticalmente, caso necessário */
+    color: #333; /* Cor dos ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Animação suave de cor ao passar o mouse */
+  }
+  
+  .modalIco a:hover {
+    color:#F1C40F; /* Exemplo de cor para o LinkedIn (ajuste conforme o ícone) */
+  }
+  
+  .modalIco a:focus {
+    outline: none; /* Remove o contorno ao focar */
+  }
+  
+.perfis-de-colaboradores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.perfil {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+ 
+     
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.945), 0 0 30px rgba(255, 255, 255, 0.15);  /* Efeito de luz mais intenso */
+    position: relative;
+    overflow: hidden;
+}
+
+.perfil:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.925), 0 0 40px rgba(255, 255, 255, 0.3); /* Luz branca mais intensa */
+}
+
+.imagem-colaborador {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+ 
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.perfil:hover .imagem-colaborador {
+    transform: scale(1.1);
+}
+
+h3 {
+    font-size: 46px;
+    color: #f1c40f;
+    margin-bottom: 5px;
+    font-family: 'VT323', monospace;
+
+}
+
+p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);  /* Fundo escuro para o modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #222;  /* Fundo mais escuro para o conteúdo do modal */
+    padding: 40px;
+     
+    width: 500px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgb(0, 0, 0);  /* Sombras mais fortes */
+    transform: scale(0.8);
+    animation: modalIn 0.3s forwards;
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);  /* Efeito de luz em torno da imagem */
+}
+
+.modal-info {
+    max-width: 350px;
+}
+
+.modal-content h2 {
+    color: #f1c40f;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'VT323', monospace;
+}
+
+.modal-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #f1c40f;
+}
+
+@keyframes modalIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfis-de-colaboradores {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .perfil {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .perfis-de-colaboradores {
+        gap: 15px;
+    }
+
+    .perfil {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+}

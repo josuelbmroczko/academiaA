@@ -1,6 +1,7 @@
  
 import './App.css';
 import GlobalStyle from './GlobalStyle.js';
+import NossaEquipe from './componetes/NossaEquipe/NossaEquipe.js';
 import Taekwondo from './componetes/Taekwondo/index.jsx';
 import Contatos from './componetes/contatos/index.jsx';
 import Footer from './componetes/footer/index.jsx';
@@ -15,6 +16,7 @@ function App() {
       <Topo/>
       <Section1/>
       <Taekwondo/>
+      <NossaEquipe/>
       <Contatos/>
       <Mapa/>
       <Footer/>
