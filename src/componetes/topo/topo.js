@@ -76,8 +76,9 @@ export const StyleTopo = styled.section`
 
     @media (max-width: 768px) {
         .textoBanner {
-            top: 20%;
+            top: 15%;
             height: 75%;
+            
         }
     }
 

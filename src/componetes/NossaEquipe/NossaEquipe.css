@@ -75,7 +75,7 @@
 }
 
 h3 {
-    font-size: 46px;
+    font-size: 2rem;
     color: #f1c40f;
     margin-bottom: 5px;
     font-family: 'VT323', monospace;
@@ -176,7 +176,7 @@ p {
     }
 
     .perfil {
-        width: 200px;
+        width: 250px;
         padding: 15px;
     }
 
@@ -192,7 +192,7 @@ p {
     }
 
     .perfil {
-        width: 160px;
+        width: 250px;
         padding: 10px;
     }
 
