@@ -6,7 +6,7 @@ export default function Taekwondo() {
             <div className="content">
                 
             <h2 id="taekwondo">Taekwondo</h2>
-            <p>Segundas e Quartas</p>
+            <p>Terças e Quintas</p>
                 <p>das 19:00 às 20:00</p>
                 <a href="#unidades">Unidade Ribeirão Pires</a>
             </div>

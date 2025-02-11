@@ -31,10 +31,11 @@ export default function Topo() {
 
     return (
         <StyleTopo id='home'>
-            <video ref={videoRef} autoPlay loop muted>
-                <source src={vidioTopo} type="video/mp4" />
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+            <video ref={videoRef} autoPlay playsInline loop muted>
+    <source src={vidioTopo} type="video/mp4" />
+    Seu navegador não suporta o elemento de vídeo.
+</video>
+
 
             <div className='opcoes'>
                 <ul>

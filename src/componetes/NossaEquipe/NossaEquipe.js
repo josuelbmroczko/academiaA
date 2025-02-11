@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './NossaEquipe.css';
 import { FaLinkedin, FaGithub, FaInstagram, FaYoutube  } from 'react-icons/fa';
-
+import yasmin from '../../imagens/yasmin.jpg' 
+import lucas from '../../imagens/lucas.jpg'
+import Luciana from '../../imagens/luciana.jpg'
+import edson from '../../imagens/edson.jpg'
 //import joseImg from "../Assets/grandeJose.webp";
  
  
@@ -11,33 +14,45 @@ const colaboradores = [
     id: '00', 
     nome: 'Edson', 
     sobrenome: 'Constantino', 
-    img: 'https://scontent.fcgh24-1.fna.fbcdn.net/v/t39.30808-6/462644881_8923928067617803_4484026263558265007_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Mtilf4OvfsQ7kNvgEsxNpa&_nc_zt=23&_nc_ht=scontent.fcgh24-1.fna&_nc_gid=AYaqXNTW3w1oq5ygL9tB7Gm&oh=00_AYDBTHadKZY8ap6mXwKhSTwBBcXOz2Eo4CCHslLl3Gzo7w&oe=67A93AE8', 
-    cargo: 'Personal',
+    img: edson, 
+    cargo: 'Personal/Proprietário',
  
      
     insta: 'https://www.instagram.com/edson_constantino/',
    
   },
-  { 
-    id: '01', 
-    nome: 'Lembrar nome', 
-    sobrenome: '', 
-    img: 'https://scontent.fcgh24-1.fna.fbcdn.net/v/t39.30808-6/462644881_8923928067617803_4484026263558265007_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Mtilf4OvfsQ7kNvgEsxNpa&_nc_zt=23&_nc_ht=scontent.fcgh24-1.fna&_nc_gid=AYaqXNTW3w1oq5ygL9tB7Gm&oh=00_AYDBTHadKZY8ap6mXwKhSTwBBcXOz2Eo4CCHslLl3Gzo7w&oe=67A93AE8', 
-    cargo: 'Personal',
  
-     
-    insta: 'https://www.instagram.com/edson_constantino/',
-  },
   { 
     id: '02', 
     nome: 'Yasmiin', 
-    sobrenome: '', 
-    img: 'https://scontent.fcgh24-1.fna.fbcdn.net/v/t39.30808-6/462644881_8923928067617803_4484026263558265007_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7Mtilf4OvfsQ7kNvgEsxNpa&_nc_zt=23&_nc_ht=scontent.fcgh24-1.fna&_nc_gid=AYaqXNTW3w1oq5ygL9tB7Gm&oh=00_AYDBTHadKZY8ap6mXwKhSTwBBcXOz2Eo4CCHslLl3Gzo7w&oe=67A93AE8', 
+    sobrenome: 'gasparotto', 
+    img: yasmin, 
     cargo: 'Personal',
  
      
-    insta: 'https://www.instagram.com/edson_constantino/',
+    insta: 'https://www.instagram.com/yaas.gasparotto?igsh=cjBrdHo5Z3lvNnhs',
   },
+  { 
+    id: '01', 
+    nome: 'Luciana ', 
+    sobrenome: 'Almeida', 
+    img: Luciana, 
+    cargo: 'Personal',
+ 
+     
+    insta: 'https://www.instagram.com/luucy.almeida?igsh=cm96MDRibTdtNGtj',
+  },
+  { 
+    id: '03', 
+    nome: 'lucas', 
+    sobrenome: 'silva', 
+    img: lucas, 
+    cargo: 'Prof de Taekwondo',
+ 
+     
+    insta: 'https://www.instagram.com/oluca.ssilva/',
+  },
+ 
  
  
   
