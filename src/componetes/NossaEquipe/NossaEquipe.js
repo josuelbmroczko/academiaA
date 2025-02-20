@@ -37,7 +37,7 @@ const colaboradores = [
     nome: 'Luciana ', 
     sobrenome: 'Almeida', 
     img: Luciana, 
-    cargo: 'Personal',
+    cargo: 'professora de ritmos e ritbox',
  
      
     insta: 'https://www.instagram.com/luucy.almeida?igsh=cm96MDRibTdtNGtj',
@@ -47,7 +47,7 @@ const colaboradores = [
     nome: 'lucas', 
     sobrenome: 'silva', 
     img: lucas, 
-    cargo: 'Prof de Taekwondo',
+    cargo: 'professor de Taekwondo',
  
      
     insta: 'https://www.instagram.com/oluca.ssilva/',
