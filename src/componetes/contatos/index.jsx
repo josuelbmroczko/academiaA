@@ -14,11 +14,7 @@ export default function Contatos() {
           </ul>
             <ul>
               
-            <li>
-  <a href="tel:+5511998731174">
-    <img src={imagem2} alt="telefone" />
-  </a>
-</li>
+            
 
             </ul>
 

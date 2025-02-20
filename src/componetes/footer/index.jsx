@@ -40,9 +40,8 @@ const Footer = () => {
             <FooterSection>
                 <FooterTitle>Centro de atendimento</FooterTitle>
                 <FooterContent>
-                    <p>Whatsapp: <a href="tel:+11987654321"> (11) 98765-4321</a></p>
-                    <p>Telefone: <a href="tel:+551148223453">(11) 48223453</a></p>
-                    <p><a href={dados.redesSociais.insta}  target="blanck">Instagram: alphasport</a></p>
+                    <p>Whatsapp: <a href="tel:+11987654321"> (11) 99873-1174</a></p>
+                     <p><a href={dados.redesSociais.insta}  target="blanck">Instagram: alphasport</a></p>
                  </FooterContent>
             </FooterSection>
             <FooterSection>
