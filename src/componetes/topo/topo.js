@@ -64,11 +64,11 @@ export const StyleTopo = styled.section`
         }
 
         h2 {
-            color: #fdfb46;
+            color:rgba(230, 227, 95, 0.55);
             font-family: "Anton", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3rem;
  
  
         }

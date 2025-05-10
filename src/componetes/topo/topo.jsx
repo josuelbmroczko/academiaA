@@ -48,7 +48,7 @@ export default function Topo() {
 
             <div className='textoBanner'>
                 <h1>ACADEMIA DESCOMPLICADA ZERO ANUIDADE</h1>
-                <h2>"Prepare-se para mudar para melhor."</h2>
+                <h2>"Desafie seu corpo todos os dias!."</h2>
             </div>
         </StyleTopo>
     );
