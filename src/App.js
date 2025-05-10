@@ -1,6 +1,7 @@
  
 import './App.css';
 import GlobalStyle from './GlobalStyle.js';
+import { MediaCarousel } from './componetes/MediaCarousel/MediaCarousel.jsx';
 import NossaEquipe from './componetes/NossaEquipe/NossaEquipe.js';
 import Taekwondo from './componetes/Taekwondo/index.jsx';
 import Contatos from './componetes/contatos/index.jsx';
@@ -17,6 +18,7 @@ function App() {
       <Section1/>
       <Taekwondo/>
       <NossaEquipe/>
+       <MediaCarousel/>
       <Contatos/>
       <Mapa/>
       <Footer/>
