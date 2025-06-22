@@ -1,10 +1,12 @@
 // src/components/MediaCarousel.jsx
-import { useState } from "react";
 import styled from "styled-components";
-import video1 from "./video1.mp4"
+import video1 from "./video1.mp4";
+import video2 from "./video2.mp4";
+import video3 from "./video3.mp4";
+import video4 from "./video4.mp4";
+
 const CarouselWrapper = styled.section`
   width: 60%;
-   
   margin: auto;
   padding: 2rem 1rem;
   background: linear-gradient(135deg, #000, #1a1a1ab9);
@@ -18,6 +20,7 @@ const CarouselWrapper = styled.section`
   @media (max-width: 768px) {
     padding: 1.5rem 1rem;
     border-radius: 0.75rem;
+    width: 90%;
   }
 `;
 
@@ -55,36 +58,25 @@ const StyledVideo = styled.video`
 `;
 
 export function MediaCarousel() {
-  const [media] = useState([
-    {
-      type: "video",
-      src: "/video.mp4",
-      alt: "Vídeo de exemplo",
-    },
-  ]);
-
   return (
     <CarouselWrapper>
-      <Title>Destaque</Title>
-      {media.map((item, index) =>
-        item.type === "video" ? (
-          <VideoContainer key={index}>
-            <StyledVideo src={video1} controls />
-          </VideoContainer>
-        ) : (
-          <img
-            key={index}
-            src={item.src}
-            alt={item.alt}
-            style={{
-              width: "100%",
-              borderRadius: "0.75rem",
-              objectFit: "cover",
-              boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
-            }}
-          />
-        )
-      )}
+      <Title>Destaques</Title>
+
+      <VideoContainer>
+        <StyledVideo src={video1} controls />
+      </VideoContainer>
+
+      <VideoContainer>
+        <StyledVideo src={video2} controls />
+      </VideoContainer>
+
+      <VideoContainer>
+        <StyledVideo src={video3} controls />
+      </VideoContainer>
+
+      <VideoContainer>
+        <StyledVideo src={video4} controls />
+      </VideoContainer>
     </CarouselWrapper>
   );
 }
